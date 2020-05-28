@@ -11,6 +11,7 @@
   <properties>
     <java.version>11</java.version>
     <springboot.version>2.1.12.RELEASE</springboot.version>
+    <druid.version>1.1.22</druid.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -35,6 +36,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>com.zaxxer</groupId>
+          <artifactId>HikariCP</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -44,6 +51,11 @@
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid-spring-boot-starter</artifactId>
+      <version>${druid.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

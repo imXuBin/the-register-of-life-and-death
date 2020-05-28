@@ -1,1 +1,0 @@
-create table foo (id int, bar varchar(64));
