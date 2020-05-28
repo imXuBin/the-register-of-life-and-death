@@ -4,3 +4,12 @@
 欢迎各位有兴趣的朋友一起投入到这件有趣的、有意义的事情中来
 
 [ [Wiki](https://github.com/useful-person/the-register-of-life-and-death/wiki) | [projects](https://github.com/useful-person/the-register-of-life-and-death/projects) | ……]
+
+
+
+数据库加密
+
+```shell
+java -cp druid-1.1.22.jar com.alibaba.druid.filter.config.ConfigTools you_password
+```
+
