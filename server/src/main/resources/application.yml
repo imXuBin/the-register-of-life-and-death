@@ -1,7 +1,0 @@
-server:
-  port: 8080
-
-spring:  datasource:    initialization-mode: embedded
-    schema:    - classpath*:schema.sql
-    - classpath*:data.sql
-    platform: h2
